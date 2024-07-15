@@ -1,0 +1,319 @@
+*
+{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    text-decoration: none;
+}
+body
+{
+    height: 100vh;
+    width: auto;
+}
+.header
+{
+    height:50px;
+    width:100%;
+    background-color: rgba(7, 44, 7, 0.932);
+    color:white ;
+    font-size:25px;
+    font-weight: bold;
+    padding-left:50px ;
+    padding-top: 5px;
+}
+.sub_container
+{
+    
+    height:800px;
+    display: flex;
+    background-color: rgb(240, 235, 223);
+
+
+}
+.sub_container  .part_1
+{
+    height:800px;
+    width: 350px;
+    background-color: #dbd8d8;
+     display: flex;
+    flex-direction: column;
+    align-items: center; 
+}
+.sub_container  .part_1 img{
+    height:200px;
+    width:200px;
+    border-radius: 80px;
+}
+.list{
+    margin-top: 0px;
+    padding-left: 50px;
+    
+
+}
+.list   ul
+{
+ display: flex;
+ flex-direction: column;
+ list-style: none;   
+}
+.list   .list-item
+{
+    margin:10px;
+    padding-top:-15px;
+
+    height:60px;
+    width: 90%;
+}
+.list .list-item  a
+{
+text-decoration: none;
+color: black;
+display: flex;
+padding-top:30px;
+}
+.list-item  a:hover
+{
+      
+    background-color: rgba(7, 44, 7, 0.932);
+    color: white;
+    width:100%;
+    transition:1s;
+    border-radius:2px;
+
+}
+
+.list   .list-item  i
+{
+font-size: 15px;
+margin-right: 10px;
+margin-top: -10px;
+}
+.list-item
+{
+    display: flex;
+}
+.list   .list-item p{
+    font-size: 20px;
+    font-weight: bold;
+    margin-top:-20px ;
+}
+.sub_container .part_2
+{
+width:100%;
+margin-top:100px;
+background-color: rgb(240, 235, 223);
+}
+.sub_container .part_2 .form
+{
+
+margin-top: 100px;
+margin-left:25px;
+padding-left:10px;
+}
+.sub_container .part_2 .form  label  
+{
+    font-size:20px;
+    font-weight: bold;
+}
+.sub_container .part_2 .form  input
+{
+    height: 40px;
+    width: 80%;
+    border-radius:2px;
+}
+#file
+{
+    border-radius:2px;
+}
+ #button
+ {   
+    background-color: #26a4ee;
+    color: white;
+    height:40px;
+    width: 80px;
+    border-radius:3px;
+}
+
+
+
+
+
+
+/* <!------------------------------------------------maxwidth-768--------------------------------> */
+@media  (max-width:768px)
+{
+    .sub_container  .part_1
+    {
+        width:280px;
+        
+    }
+    .sub_container  .part_1 img{
+    height:150px;
+    width:150px;
+    }
+    .sub_container  .part_1 .list
+    {
+        padding-left: 30px;
+    }
+   
+    .list   ul
+    {
+        border:1px  solid;
+        margin-left:-30px;
+        border:none;
+
+    }
+    .list   .list-item  a
+    {
+        height:30px;
+        margin-top: 10px;
+        margin-bottom: 5px;
+        padding-top:18px;
+        /* background-color: #990e0e; */
+    }
+
+    .list   .list-item  i
+    {
+        font-size:10px;
+    }
+    .list   .list-item  p{
+        font-size: 15px;
+        margin-top:-17px;
+    }
+    .sub_container .part_2 .form  label 
+    {
+        font-size:15px;
+    }
+    .sub_container .part_2 .form input {
+        height:25px;
+    }
+
+    #file
+    {
+        height:30px;
+        border-radius:1px;
+
+    }
+    #button
+    {   margin-top:20px;
+    
+    }
+
+}
+/* <!--max-width-480px-> */
+
+@media  (max-width:480px)
+{  body
+    {
+        width:110%;
+    }
+   .container
+   {
+    height:100vh;
+    width: 100%;
+   }
+   .header
+   {
+    height:50px;
+    width:100%;
+    font-size:20px;
+   }
+   .sub_container
+   {
+    width:100%;
+   }
+   .sub_container .part_1
+   {
+    width: 43%;
+   }
+   .sub_container .part_1 img
+    {
+        height:100px;
+        width:100px;
+    }    
+    .sub_container .part_1 .list .list-item
+    {
+        
+        height:30px;
+        margin-left: -10px;
+        width: 100%;
+    }
+    .sub_container .part_1 .list ul
+    {
+        margin-left: 0px;
+        width: 100%;
+    }
+
+
+    .sub_container .part_1 .list .list-item a
+    {
+    
+        margin-top: 0px;
+        font-size:10px;
+        margin-left:-20px;
+        height: 30px;
+        width: 100%;
+    }
+    .sub_container .part_1 .list .list-item a:hover
+    {
+      background-color: rgba(7, 44, 7, 0.932);
+       color: white;
+    }
+
+    .sub_container .part_1 .list .list-item a i
+    {
+        font-size: 10px;
+        margin-top:-13px;
+    }
+    .sub_container .part_1 .list .list-item a p
+    {
+        font-size: 12px;
+        
+        
+
+    }
+    #p1
+    {
+    width:150px;
+    }
+    .sub_container .part_2
+    {
+        
+        margin-top: 60px;
+    }
+    
+    .sub_container .part_2 .form label
+    {
+        font-size:13px;
+    }
+    .sub_container .part_2 .form input
+    {
+        height:20px;
+    }
+    #file
+    {
+        height:23px;
+        font-size:11px;
+        color:black;
+        width:180px
+    }
+    #button
+    {
+        height:25px;
+        font-size:12px;
+    }
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
